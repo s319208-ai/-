@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Urban Style 電商網站</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<!-- ⭐ CSS 全部寫在這裡 -->
+<style>
+body{
+  font-family:'Noto Sans TC',sans-serif;
+  margin:0;
+}
+
+.hero{
+  height:100vh;
+  background:#f5f1eb;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:70px;
+  letter-spacing:3px;
+}
+
+.section{
+  padding:100px 20px;
+}
+
+.product{
+  transition:0.3s;
+  border:none;
+}
+
+.product img{
+  width:100%;
+  aspect-ratio:1/1;
+  object-fit:contain;
+  background:#f8f8f8;
+  padding:10px;
+}
+
+
+
+
+.product:hover{
+  transform:translateY(-5px);
+}
+
+.price{
+  color:#b88b5f;
+  font-weight:bold;
+}
+
+.section h2{
+  font-weight:700;
+  margin-bottom:15px;
+}
+
+.text-muted{
+  color:#888 !important;
+}
+.section-divider{
+  width:80%;
+  height:1px;
+  background:#ddd;
+  margin:0 auto;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Urban Style</a>
+
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">首頁</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">品牌</a></li>
+        <li class="nav-item"><a class="nav-link" href="#new">新品</a></li>
+        <li class="nav-item"><a class="nav-link" href="#best">熱銷排行</a></li>
+        <li class="nav-item"><a class="nav-link" href="#women">女裝</a></li>
+        <li class="nav-item"><a class="nav-link" href="#men">男裝</a></li>
+        <li class="nav-item"><a class="nav-link" href="#accessories">配件</a></li>
+        <li class="nav-item"><a class="nav-link" href="#game">小遊戲</a></li>
+        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">聯絡我們</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="hero">
+  <div>
+    <h1>URBAN STYLE</h1>
+    <p>Simple . Modern . Fashion</p>
+    <a href="#new" class="btn btn-dark mt-3">SHOP NOW</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section text-center">
+  <h2>品牌介紹</h2>
+  <p>打造簡約、舒適、有個性的服飾風格，
+從韓系簡約到都會休閒，我們精選兼具舒適與設計感的服飾，
+希望讓每個人在不同場合中，都能輕鬆找到最適合自己的穿搭選擇。
+</p>
+</section>
+
+<!-- NEW -->
+<section id="new" class="section bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">新品上市</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card product">
+          <img src="image/image1.png">
+          <div class="card-body">
+            <p>慵懶襯衫</p>
+            <p class="price">NT$890</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card product">
+          <img src="image/image2.png">
+          <div class="card-body">
+            <p>簡約T恤</p>
+            <p class="price">NT$590</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card product">
+          <img src="image/image3.png">
+          <div class="card-body">
+            <p>寬版襯衫</p>
+            <p class="price">NT$990</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card product">
+          <img src="image/image4.png">
+          <div class="card-body">
+            <p>工裝外套</p>
+            <p class="price">NT$1290</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card product">
+          <img src="image/image5.png">
+          <div class="card-body">
+            <p>針織衫</p>
+            <p class="price">NT$350</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card product">
+          <img src="image/image6.png">
+          <div class="card-body">
+            <p>連帽衛衣</p>
+            <p class="price">NT$550</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- BEST SELLER -->
+<section id="best" class="section">
+
+  <div class="container">
+
+    <h2 class="text-center mb-5">
+      🔥 熱銷排行
+    </h2>
+
+    <div class="row text-center">
+
+      <div class="col-md-3">
+        <h3>#1</h3>
+        <p>慵懶襯衫</p>
+        <p class="price">NT$890</p>
+      </div>
+
+      <div class="col-md-3">
+        <h3>#2</h3>
+        <p>高腰百褶長裙</p>
+        <p class="price">NT$990</p>
+      </div>
+
+      <div class="col-md-3">
+        <h3>#3</h3>
+        <p>工裝口袋襯衫</p>
+        <p class="price">NT$890</p>
+      </div>
+
+      <div class="col-md-3">
+        <h3>#4</h3>
+        <p>韓系寬褲</p>
+        <p class="price">NT$990</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<div class="section-divider"></div>
+
+<section id="women" class="section">
+
+<!-- WOMEN -->
+<section id="women" class="section">
+
+  <div class="container">
+
+    <h2 class="text-center mb-3">
+      女裝系列
+    </h2>
+
+    <p class="text-center text-muted mb-5">
+      韓系質感穿搭 · 簡約日常風格
+    </p>
+
+    <div class="row g-4">
+
+      <!-- 商品1 -->
+      <div class="col-md-3">
+
+        <div class="card product">
+
+          <img src="image/image7.png">
+
+          <div class="card-body text-center">
+
+            <p>韓式方領上衣</p>
+
+            <p class="price">
+              NT$790
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- 商品2 -->
+      <div class="col-md-3">
+
+        <div class="card product">
+
+          <img src="image/image8.png">
+
+          <div class="card-body text-center">
+
+            <p>氣質襯衫洋裝</p>
+
+            <p class="price">
+              NT$1290
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- 商品3 -->
+      <div class="col-md-3">
+
+        <div class="card product">
+
+          <img src="image/image9.png">
+
+          <div class="card-body text-center">
+
+            <p>高腰百褶長裙</p>
+
+            <p class="price">
+              NT$990
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- 商品4 -->
+      <div class="col-md-3">
+
+        <div class="card product">
+
+          <img src="image/image10.png">
+
+          <div class="card-body text-center">
+
+            <p>雪紡罩衫</p>
+
+            <p class="price">
+              NT$1090
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- 商品5 -->
+      <div class="col-md-3">
+
+        <div class="card product">
+
+          <img src="image/image11.png">
+
+          <div class="card-body text-center">
+
+            <p>短版針織上衣</p>
+
+            <p class="price">
+              NT$690
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- 商品6 -->
+      <div class="col-md-3">
+
+        <div class="card product">
+
+          <img src="image/image12.png">
+
+          <div class="card-body text-center">
+
+            <p>短版牛仔外套</p>
+
+            <p class="price">
+              NT$890
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- 商品7 -->
+      <div class="col-md-3">
+
+        <div class="card product">
+
+          <img src="image/image13.png">
+
+          <div class="card-body text-center">
+
+            <p>素色連身長裙</p>
+
+            <p class="price">
+              NT$1190
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- 商品8 -->
+      <div class="col-md-3">
+
+        <div class="card product">
+
+          <img src="image/image14.png">
+
+          <div class="card-body text-center">
+
+            <p>簡約西裝外套</p>
+
+            <p class="price">
+              NT$1490
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- MEN -->
+<!-- MEN -->
+<section id="men" class="section bg-light">
+
+  <div class="container">
+
+    <h2 class="text-center mb-3">
+      男裝系列
+    </h2>
+
+    <p class="text-center text-muted mb-5">
+      街頭風格 · 工裝穿搭 · 日常休閒
+    </p>
+
+    <div class="row g-4">
+
+      <!-- 商品1 -->
+      <div class="col-md-3">
+        <div class="card product">
+          <img src="image/image15.png">
+          <div class="card-body text-center">
+            <p>寬版素色T恤</p>
+            <p class="price">NT$590</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 商品2 -->
+      <div class="col-md-3">
+        <div class="card product">
+          <img src="image/image16.png">
+          <div class="card-body text-center">
+            <p>工裝口袋襯衫</p>
+            <p class="price">NT$890</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 商品3 -->
+      <div class="col-md-3">
+        <div class="card product">
+          <img src="image/image17.png">
+          <div class="card-body text-center">
+            <p>韓系寬褲</p>
+            <p class="price">NT$990</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 商品4 -->
+      <div class="col-md-3">
+        <div class="card product">
+          <img src="image/image18.png">
+          <div class="card-body text-center">
+            <p>工裝短褲</p>
+            <p class="price">NT$790</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 商品5 -->
+      <div class="col-md-3">
+        <div class="card product">
+          <img src="image/image19.png">
+          <div class="card-body text-center">
+            <p>短袖Polo衫</p>
+            <p class="price">NT$1090</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 商品6 -->
+      <div class="col-md-3">
+        <div class="card product">
+          <img src="image/image20.png">
+          <div class="card-body text-center">
+            <p>抽繩休閒褲</p>
+            <p class="price">NT$1290</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 商品7 -->
+      <div class="col-md-3">
+        <div class="card product">
+          <img src="image/image21.png">
+          <div class="card-body text-center">
+            <p>棒球外套</p>
+            <p class="price">NT$1390</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 商品8 -->
+      <div class="col-md-3">
+        <div class="card product">
+          <img src="image/image22.png">
+          <div class="card-body text-center">
+            <p>直筒牛仔褲</p>
+            <p class="price">NT$1190</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ACCESSORIES -->
+<section id="accessories" class="section">
+
+  <div class="container">
+
+    <h2 class="text-center mb-3">
+      配件系列
+    </h2>
+
+    <p class="text-center text-muted mb-5">
+      完成穿搭的最後一塊拼圖
+    </p>
+
+    <div class="row g-4">
+
+      <!-- 配件1 -->
+      <div class="col-md-4">
+        <div class="card product">
+          <img src="image/image23.png">
+          <div class="card-body text-center">
+            <p>韓系棒球帽</p>
+            <p class="price">NT$490</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 配件2 -->
+      <div class="col-md-4">
+        <div class="card product">
+          <img src="image/image24.png">
+          <div class="card-body text-center">
+            <p>極簡帆布包</p>
+            <p class="price">NT$690</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 配件3 -->
+      <div class="col-md-4">
+        <div class="card product">
+          <img src="image/image25.png">
+          <div class="card-body text-center">
+            <p>復古皮革腰帶</p>
+            <p class="price">NT$590</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 配件4 -->
+      <div class="col-md-4">
+        <div class="card product">
+          <img src="image/image26.png">
+          <div class="card-body text-center">
+            <p>簡約銀飾項鍊</p>
+            <p class="price">NT$790</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 配件5 -->
+      <div class="col-md-4">
+        <div class="card product">
+          <img src="image/image27.png">
+          <div class="card-body text-center">
+            <p>韓系漁夫帽</p>
+            <p class="price">NT$550</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 配件6 -->
+      <div class="col-md-4">
+        <div class="card product">
+          <img src="image/image28.png">
+          <div class="card-body text-center">
+            <p>簡約腕錶</p>
+            <p class="price">NT$1290</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- GAME -->
+<section id="game" class="section text-center">
+
+  <h2>🎮 今日穿搭小遊戲</h2>
+
+  <p class="text-muted">
+    點擊按鈕，隨機獲得 Urban Style 今日推薦穿搭！
+  </p>
+
+  <button class="btn btn-dark mt-3" onclick="randomOutfit()">
+    抽今日穿搭
+  </button>
+
+  <h3 class="mt-4" id="result"></h3>
+
+</section>
+
+<script>
+function randomOutfit(){
+
+  const outfits = [
+
+    "法式方領上衣 ＋ 高腰百褶長裙",
+
+    "氣質襯衫洋裝 ＋ 小香風短版外套",
+
+    "短版針織上衣 ＋ 素色連身長裙",
+
+    "寬鬆落肩襯衫 ＋ 高腰百褶長裙",
+
+    "簡約西裝外套 ＋ 法式方領上衣",
+
+    "寬版素色T恤 ＋ 韓系寬褲",
+
+    "工裝口袋襯衫 ＋ 直筒牛仔褲",
+
+    "亞麻短袖襯衫 ＋ 工裝短褲",
+
+    "韓系西裝背心 ＋ 韓系寬褲",
+
+    "薄款防曬襯衫 ＋ 直筒牛仔褲"
+
+  ];
+
+  const randomIndex = Math.floor(
+    Math.random() * outfits.length
+  );
+
+  document.getElementById("result").innerHTML =
+    "✨ 今日推薦穿搭：<br>" +
+    outfits[randomIndex];
+
+}
+</script>
+
+
+<!-- FAQ -->
+<section id="faq" class="section bg-light">
+
+  <div class="container">
+
+    <h2 class="text-center mb-5">常見問題 FAQ</h2>
+
+    <div class="accordion" id="faqAccordion">
+
+      <!-- item 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button"
+            data-bs-toggle="collapse" data-bs-target="#faq1">
+            商品多久會出貨？
+          </button>
+        </h2>
+
+        <div id="faq1" class="accordion-collapse collapse show"
+          data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            完成訂單後約 1~3 個工作天內出貨。
+          </div>
+        </div>
+      </div>
+
+      <!-- item 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#faq2">
+            可以退換貨嗎？
+          </button>
+        </h2>
+
+        <div id="faq2" class="accordion-collapse collapse"
+          data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            收到商品後 7 天內可申請退換貨。
+          </div>
+        </div>
+      </div>
+
+      <!-- item 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button"
+            data-bs-toggle="collapse" data-bs-target="#faq3">
+            有提供超商取貨嗎？
+          </button>
+        </h2>
+
+        <div id="faq3" class="accordion-collapse collapse"
+          data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            提供 7-11、全家超商取貨服務。
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+
+  <div class="container">
+
+    <h2 class="text-center mb-5">
+      聯絡我們
+    </h2>
+
+    <div class="row justify-content-center">
+
+      <div class="col-md-8">
+
+        <div class="card shadow-sm border-0">
+
+          <div class="card-body p-5">
+
+            <div class="mb-3">
+              <label class="form-label">姓名</label>
+              <input type="text" class="form-control" placeholder="請輸入姓名">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" placeholder="請輸入 Email">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">留言內容</label>
+              <textarea class="form-control" rows="5" placeholder="請輸入留言"></textarea>
+            </div>
+
+            <button class="btn btn-dark w-100">
+              送出留言
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
